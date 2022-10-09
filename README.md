@@ -21,3 +21,21 @@ class search section, the filters are incredibly unintuitive to use.
 - Want to meet up with a professor and discuss possibilities about doing some research with them?
 
 and probably a ton more reasons...
+
+## Want to Contribute?
+
+The codebase for ProfessorSearch is very easy to navigate, Server Side code is identified by 
+whether or not there is a corresponding *.js or *.ts file for the *.svelte file. Svelte is used
+for templating out the front end.
+
+As of right now, there are two routes / and /professor/[string] where the string can be anything
+and as long as a professor's name matches within 75% of the query, their class times will be listed.
+
+The main page, under the route / demarked by the first '+page.svelte' is meant to serve as the page
+where users can search a professor's name and be redirected to the right /professor/[string] page.
+
+The class times can be found in the data/ folder which also contains class times from previous
+semesters.
+
+##### Side Note: I will probably setup a Github Action to auto download and compile class times
+##### so that shouldn't recurring issue.
