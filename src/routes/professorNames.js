@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import data from '../../data/Classes_SP23_IU.json';
 
 export function getProfessors() {
