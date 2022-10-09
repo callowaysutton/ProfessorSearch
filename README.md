@@ -1,38 +1,23 @@
-# create-svelte
+# ProfessorSearch
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+ProfessorSearch is a tool made so that finding professors and classes that you may be interested in
+on campus is as easy as possible to search for. Personally, I've found that I've had large gaps in 
+between my classes where it would be inconvenient to go all the way back home to do some homework 
+but also have nothing to do on campus, so I started going to other professor's lectures to see what
+they were discussing in class.
 
-## Creating a project
+However, I ran into a small problem being that there isn't really a good way to find the class times
+for various different subjects easily. You would have to go into the SIS module on one.IU, log in to 
+IU, do 2fa with Duo, load up class search which takes a good 1-5 minutes and then use their search
+to try and find a good lecture to sit in.
 
-If you're seeing this, you've probably already done this step. Congrats!
+To me, this isn't very intuitive at all; especially because I hate Duo and want to use it as least
+as possible. Trying to use SIS on mobile is a nightmare and if you're able to actually get to the
+class search section, the filters are incredibly unintuitive to use.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Why might you want to search for a certain class or professor?
+- Have free time and want to listen to an interesting lecture?
+- Wanting to talk to a professor about a certain topic?
+- Want to meet up with a professor and discuss possibilities about doing some research with them?
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+and probably a ton more reasons...
