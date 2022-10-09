@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		%sveltekit.head%
-	</head>
-	<body>
-		<div>%sveltekit.body%</div>
-	</body>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- IU CSS Library -->
+	<link type="text/css" href="//assets.iu.edu/web/3.3.x/css/iu-framework.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="http://assets.iu.edu/web/1.5/libs/modernizr.min.js"></script>
+	<script src="//assets.iu.edu/web/3.3.x/js/iu-framework.min.js"></script>
+
+	<!-- Init IU JS Library -->
+	<script>
+		(function ($, window, document, undefined) {
+
+			$(document).ready(function () {
+
+				Foundation.OffCanvas.defaults.transitionTime = 500;
+				Foundation.OffCanvas.defaults.forceTop = false;
+				Foundation.OffCanvas.defaults.positiong = 'right';
+
+				Foundation.Accordion.defaults.multiExpand = true;
+				Foundation.Accordion.defaults.allowAllClosed = true;
+
+				// Initialize Foundation
+				$(document).foundation();
+
+				var IU = window.IU || {};
+
+				// Delete modules if necessary
+				// delete IU.uiModules['accordion'];
+
+				IU.init && IU.init();
+			});
+		})(jQuery, window, window.document);
+	</script>
+
+	%sveltekit.head%
+</head>
+
+<body>
+	<div>%sveltekit.body%</div>
+</body>
+
 </html>
