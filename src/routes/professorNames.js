@@ -1,6 +1,6 @@
 // @ts-nocheck
 
-import data from '../../data/Classes_SP23_IU.json';
+import data from '../../data/Classes_FA22_IU.json';
 
 export function getProfessors() {
     var professors = new Array();

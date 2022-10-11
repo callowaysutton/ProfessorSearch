@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { error } from '@sveltejs/kit';
-import data from '../../../../data/Classes_SP23_IU.json';
+import data from '../../../../data/Classes_FA22_IU.json';
 import { stringSimilarity } from './fuzzySearch';
 
 export function load({ params }) {
